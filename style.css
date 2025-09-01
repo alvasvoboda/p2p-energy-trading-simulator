@@ -1,0 +1,72 @@
+:root {
+  --color-background: #fcfcf9;
+  --color-surface: #fffefd;
+  --color-text: #13343b;
+  --color-text-secondary: #626c71;
+  --color-primary: #21808d;
+  --color-primary-hover: #1d7480;
+  --color-border: #5e524033;
+  --font-family-base: "Inter", Arial, sans-serif;
+}
+body {
+  margin: 0;
+  font-family: var(--font-family-base);
+  background: var(--color-background);
+  color: var(--color-text);
+}
+.game-header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.game-container {
+  max-width: 950px;
+  margin: 2rem auto;
+  background: var(--color-surface);
+  border-radius: 8px;
+  box-shadow: 0 8px 40px #21808d22;
+}
+.participant-selection .container {
+  padding: 2rem;
+}
+.participant-grid {
+  display: flex;
+  gap: 1.7rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.participant-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border, #eaeaea);
+  border-radius: 10px;
+  padding: 1.3rem;
+  width: 220px;
+  box-shadow: 0 2px 10px #21808d11;
+  cursor: pointer;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.participant-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 20px #21808d33;
+}
+.participant-stats .stat {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+  font-size: 0.99rem;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn--primary { background: var(--color-primary); color: #fff; }
+.btn--secondary { background: #ffe; color: var(--color-primary); }
+.btn--outline { background: none; border: 1px solid var(--color-primary); color: var(--color-primary); }
+.hide { display: none; }

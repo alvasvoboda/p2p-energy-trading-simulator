@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Energy Trading Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header -->
+        <header class="game-header">
+            <h1>P2P Energy Trading Simulator</h1>
+            <div class="game-controls">
+                <button id="pauseBtn" class="btn btn--secondary">⏸️ Pause</button>
+                <button id="resetBtn" class="btn btn--outline">🔄 Reset</button>
+            </div>
+        </header>
+        <!-- Participant Selection Screen -->
+        <div id="participantSelection" class="participant-selection">
+            <div class="container">
+                <h2>Choose Your Participant Type</h2>
+                <div class="participant-grid">
+                    <div class="participant-card" data-type="residential">
+                        <h3>Residential Prosumer</h3>
+                        <div class="participant-stats">
+                            <div class="stat"><span class="stat-label">Generation:</span><span class="stat-value">8 kW</span></div>
+                            <div class="stat"><span class="stat-label">Consumption:</span><span class="stat-value">12 kW</span></div>
+                            <div class="stat"><span class="stat-label">Battery:</span><span class="stat-value">15 kWh</span></div>
+                            <div class="stat"><span class="stat-label">Starting Cash:</span><span class="stat-value">$500</span></div>
+                        </div>
+                    </div>
+                    <div class="participant-card" data-type="commercial">
+                        <h3>Commercial Prosumer</h3>
+                        <div class="participant-stats">
+                            <div class="stat"><span class="stat-label">Generation:</span><span class="stat-value">150 kW</span></div>
+                            <div class="stat"><span class="stat-label">Consumption:</span><span class="stat-value">200 kW</span></div>
+                            <div class="stat"><span class="stat-label">Battery:</span><span class="stat-value">300 kWh</span></div>
+                            <div class="stat"><span class="stat-label">Starting Cash:</span><span class="stat-value">$5,000</span></div>
+                        </div>
+                    </div>
+                    <div class="participant-card" data-type="industrial">
+                        <h3>Industrial Consumer</h3>
+                        <div class="participant-stats">
+                            <div class="stat"><span class="stat-label">Generation:</span><span class="stat-value">50 kW</span></div>
+                            <div class="stat"><span class="stat-label">Consumption:</span><span class="stat-value">800 kW</span></div>
+                            <div class="stat"><span class="stat-label">Battery:</span><span class="stat-value">100 kWh</span></div>
+                            <div class="stat"><span class="stat-label">Starting Cash:</span><span class="stat-value">$10,000</span></div>
+                        </div>
+                    </div>
+                    <div class="participant-card" data-type="community">
+                        <h3>Energy Community</h3>
+                        <div class="participant-stats">
+                            <div class="stat"><span class="stat-label">Generation:</span><span class="stat-value">300 kW</span></div>
+                            <div class="stat"><span class="stat-label">Consumption:</span><span class="stat-value">250 kW</span></div>
+                            <div class="stat"><span class="stat-label">Battery:</span><span class="stat-value">500 kWh</span></div>
+                            <div class="stat"><span class="stat-label">Starting Cash:</span><span class="stat-value">$2,000</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main game interface loads here via JS -->
+        <div id="gameInterface" class="hide"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
